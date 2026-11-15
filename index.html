@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071326">
+  <meta name="description" content="Explore DetailFlow, a concept automation service for auto detailers. See an illustrative inquiry-to-booking workflow, sample CRM, and transparent example pricing.">
+  <title>DetailFlow — More time detailing. Less time chasing leads.</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Local SVG symbols keep icon rendering dependency-free. -->
+  <svg class="svg-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M20 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.4 0-2.7-.3-3.8-.9L3 20l.9-4.7a8.5 8.5 0 1 1 16.1-3.8Z"/></symbol>
+    <symbol id="icon-sliders" viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2"/><circle cx="16" cy="17" r="2"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-3.5 8.4-8 10-4.5-1.6-8-5-8-10V6l8-4Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2Z"/></symbol>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="DetailFlow home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><path d="M8 11h10.5a8 8 0 0 1 0 16H8V11Z" stroke="currentColor" stroke-width="3.1" stroke-linejoin="round"/><path d="M17.5 9H26m-8.5 9H29m-10 9h7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg>
+        </span>
+        <span>Detail<span class="brand-accent">Flow</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#benefits">Benefits</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#crm-preview">CRM preview</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+      <a class="button button-small button-blue nav-cta" href="#request-demo">Preview request form <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileNavigation">
+        <svg class="icon menu-open-icon" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon menu-close-icon" aria-hidden="true"><use href="#icon-x"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobileNavigation" aria-label="Mobile navigation" hidden>
+      <a href="#benefits">Benefits</a><a href="#how-it-works">How it works</a><a href="#crm-preview">CRM preview</a><a href="#pricing">Pricing</a><a href="#faqs">FAQs</a><a href="#request-demo" class="mobile-demo-link">Preview request form</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero dark-section" aria-labelledby="hero-heading">
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> PURPOSE-BUILT WORKFLOWS FOR AUTO DETAILERS</p>
+          <h1 id="hero-heading">Your best work happens <span class="gradient-text">outside the inbox.</span></h1>
+          <p class="hero-description">Less chasing inquiries. More clarity on what happens next. DetailFlow is an automation service concept for bringing leads, follow-ups, and booking requests into one thoughtful workflow.</p>
+          <div class="hero-actions">
+            <a class="button button-blue button-lg" href="#crm-preview">Explore the sample CRM <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a>
+            <a class="button button-outline button-lg" href="#how-it-works">See how it works</a>
+          </div>
+          <div class="hero-footnote"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg> Concept preview. No live CRM or booking integration is connected.</div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Illustration of a sample pipeline with fictional inquiries, follow-ups, and time requests.">
+          <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+          <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-dashboard">
+            <div class="dashboard-topbar">
+              <div class="dash-brand"><span class="mini-mark">D</span> DetailFlow <span class="dash-muted">/ Workspace</span></div>
+              <span class="sample-tag">SAMPLE UI</span>
+            </div>
+            <div class="dashboard-title-row"><div><span class="overline">WORKSPACE OVERVIEW</span><h2>Inquiry pipeline</h2></div><span class="dash-date">Illustrative</span></div>
+            <div class="metric-row">
+              <div class="metric-box"><span>New inquiries</span><strong>01</strong><small>Sample record</small></div>
+              <div class="metric-box"><span>Needs a reply</span><strong>02</strong><small>Sample records</small></div>
+              <div class="metric-box"><span>Time requested</span><strong>01</strong><small>Sample record</small></div>
+            </div>
+            <div class="pipeline-heading"><strong>Recent activity</strong><span>Demo only</span></div>
+            <div class="hero-lead"><span class="lead-avatar blue-avatar">01</span><span class="lead-text"><strong>Full interior detail</strong><small>SUV · New inquiry</small></span><span class="status status-blue">New</span></div>
+            <div class="hero-lead"><span class="lead-avatar purple-avatar">02</span><span class="lead-text"><strong>Exterior maintenance</strong><small>Coupe · Follow-up needed</small></span><span class="status status-amber">Review</span></div>
+            <div class="hero-lead"><span class="lead-avatar green-avatar">03</span><span class="lead-text"><strong>Paint correction</strong><small>Sedan · Time requested</small></span><span class="status status-green">Requested</span></div>
+          </div>
+          <div class="float-card" aria-hidden="true"><span class="float-card-icon"><svg class="icon"><use href="#icon-message"/></svg></span><span><strong>Keep the next step clear</strong><small>Illustrative workflow</small></span><span class="float-check"><svg class="icon"><use href="#icon-check"/></svg></span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>LESS ADMIN. MORE ROOM TO GROW.</span><span class="hero-bottom-rule"></span><span>BUILT AROUND YOUR DAY-TO-DAY</span></div>
+    </section>
+
+    <section class="section benefits-section" id="benefits" aria-labelledby="benefits-heading">
+      <div class="container">
+        <div class="section-head centered">
+          <p class="eyebrow">A BETTER WAY TO STAY ON TOP OF THINGS</p>
+          <h2 id="benefits-heading">The details matter. <span class="muted-heading">So does the follow-through.</span></h2>
+          <p>Explore the kinds of workflow improvements DetailFlow could help you plan, set up, and manage—without adding complexity just for the sake of it.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><span class="icon-tile"><svg class="icon"><use href="#icon-layers"/></svg></span><h3>One clear view of inquiries</h3><p>Design a simple place to track new requests, requested services, and what needs attention next.</p><span class="feature-line">Organize the incoming work <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span></article>
+          <article class="benefit-card"><span class="icon-tile"><svg class="icon"><use href="#icon-message"/></svg></span><h3>More intentional follow-ups</h3><p>Map useful response and reminder steps, with clear rules for when a person should step in.</p><span class="feature-line">Keep conversations moving <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span></article>
+          <article class="benefit-card"><span class="icon-tile"><svg class="icon"><use href="#icon-sliders"/></svg></span><h3>A workflow that fits you</h3><p>Start with your current booking process and identify which repetitive steps are worth simplifying.</p><span class="feature-line">Built around real operations <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right"/></svg></span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="how-it-works" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section-head process-intro"><div><p class="eyebrow">SIMPLE BY DESIGN</p><h2 id="process-heading">From first inquiry <span class="muted-heading">to next steps.</span></h2></div><p>Every shop runs a little differently. Here's a practical three-step approach to scoping an automation workflow.</p></div>
+        <ol class="steps-grid">
+          <li class="step-card"><span class="step-number">01</span><div class="step-line" aria-hidden="true"></div><h3>Understand your process</h3><p>Review how customers currently reach you, how you respond, and where requests get stuck.</p><span class="step-detail">DISCOVERY</span></li>
+          <li class="step-card"><span class="step-number">02</span><div class="step-line" aria-hidden="true"></div><h3>Design the workflow</h3><p>Outline lead stages, suggested follow-ups, handoff points, and the information you need to see.</p><span class="step-detail">WORKFLOW DESIGN</span></li>
+          <li class="step-card"><span class="step-number">03</span><div class="step-line" aria-hidden="true"></div><h3>Test before going live</h3><p>Review messages and edge cases, check permissions, and confirm what can actually be automated.</p><span class="step-detail">VALIDATION</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section preview-section dark-section" id="crm-preview" aria-labelledby="preview-heading">
+      <div class="container">
+        <div class="preview-intro"><div><p class="eyebrow eyebrow-light">A CLEARER VIEW OF YOUR DAY</p><h2 id="preview-heading">See what a <span class="gradient-text">calmer workflow</span> could look like.</h2></div><div><p>An example of how inquiries might be organized in a future CRM setup. Click the filters to explore fictional records.</p><span class="preview-disclaimer"><svg class="icon" aria-hidden="true"><use href="#icon-sparkle"/></svg> Fictional CRM preview · not connected to live data</span></div></div>
+        <div class="crm-window">
+          <div class="crm-topbar"><div class="crm-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>DetailFlow / Sample workspace</span><span class="crm-demo-pill">FICTIONAL DATA · FILTERABLE</span></div>
+          <div class="crm-body">
+            <aside class="crm-sidebar" aria-label="Decorative sample CRM sidebar"><div class="crm-sidebar-logo"><span class="mini-mark">D</span><strong>Workspace</strong></div><div class="sidebar-item current"><svg class="icon" aria-hidden="true"><use href="#icon-layers"/></svg> Inquiries</div><div class="sidebar-item"><svg class="icon" aria-hidden="true"><use href="#icon-clock"/></svg> Follow-ups</div><div class="sidebar-item"><svg class="icon" aria-hidden="true"><use href="#icon-sliders"/></svg> Workflow</div><div class="sidebar-note">Demo workspace <span>All records are fictional.</span></div></aside>
+            <div class="crm-main">
+              <div class="crm-heading"><div><span class="crm-overline">DETAILFLOW / INQUIRIES</span><h3>Lead overview</h3><p>Example service requests and their next steps</p></div><span class="crm-count" id="crmCount" aria-live="polite">4 sample inquiries</span></div>
+              <div class="crm-filters" role="group" aria-label="Filter fictional inquiries"><button class="filter-chip is-selected" data-filter="all" type="button" aria-pressed="true">All inquiries</button><button class="filter-chip" data-filter="new" type="button" aria-pressed="false">New</button><button class="filter-chip" data-filter="follow-up" type="button" aria-pressed="false">Needs follow-up</button><button class="filter-chip" data-filter="requested" type="button" aria-pressed="false">Time requested</button></div>
+              <p id="crmScrollHint" class="scroll-hint">On narrow screens, scroll the sample table sideways to see every column.</p>
+              <div class="table-scroll" role="region" aria-label="Sample inquiry records" aria-describedby="crmScrollHint" tabindex="0"><table class="crm-table"><caption class="visually-hidden">Fictional inquiries for demonstrating local table filtering</caption><thead><tr><th scope="col">INQUIRY</th><th scope="col">SERVICE INTEREST</th><th scope="col">STATUS</th><th scope="col">NEXT STEP</th></tr></thead><tbody id="crmTableBody">
+                <tr data-stage="new"><td><span class="table-index">01</span><strong>Inquiry #1042</strong></td><td>Interior detail · SUV</td><td><span class="status status-blue"><span class="status-dot"></span>New</span></td><td>Review request</td></tr>
+                <tr data-stage="follow-up"><td><span class="table-index">02</span><strong>Inquiry #1043</strong></td><td>Maintenance wash · Coupe</td><td><span class="status status-amber"><span class="status-dot"></span>Needs follow-up</span></td><td>Draft reply</td></tr>
+                <tr data-stage="requested"><td><span class="table-index">03</span><strong>Inquiry #1044</strong></td><td>Paint correction · Sedan</td><td><span class="status status-green"><span class="status-dot"></span>Time requested</span></td><td>Check schedule</td></tr>
+                <tr data-stage="follow-up"><td><span class="table-index">04</span><strong>Inquiry #1045</strong></td><td>Full detail · Truck</td><td><span class="status status-amber"><span class="status-dot"></span>Needs follow-up</span></td><td>Confirm details</td></tr>
+              </tbody></table></div>
+              <div class="crm-footer"><span><span class="legend-dot"></span> Displaying fictional records only</span><span>No live automations, messaging, or bookings</span></div>
+            </div>
+          </div>
+        </div>
+        <p class="preview-note">This preview demonstrates presentation and filtering in your browser. It does not store leads, send messages, schedule appointments, or connect to a CRM.</p>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-head centered"><p class="eyebrow">CLEAR SCOPE. CLEAR EXPECTATIONS.</p><h2 id="pricing-heading">A starting point for <span class="muted-heading">the conversation.</span></h2><p>These are fictional pricing examples to demonstrate possible service packaging—not published rates, quotes, or available plans.</p></div>
+        <div class="pricing-alert"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg><strong>Illustrative pricing only</strong><span>Actual services, scope, and fees would need to be agreed upon before any work begins.</span></div>
+        <div class="pricing-grid">
+          <article class="price-card"><div class="price-topline">EXAMPLE TIER 01</div><h3>Essentials</h3><p class="price-intro">A simple foundation for keeping new inquiries organized.</p><div class="price"><span class="currency">$</span>350 <span class="price-label">example setup</span></div><p class="price-maintenance">+ $75/month <span>example support</span></p><div class="price-divider"></div><p class="includes-label">Possible scope</p><ul class="check-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Inquiry intake layout</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Basic lead status design</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Simple workflow walkthrough</li></ul><a class="button button-outline-dark price-button" href="#request-demo">Preview request form <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a></article>
+          <article class="price-card featured"><div class="featured-ribbon">ILLUSTRATIVE EXAMPLE</div><div class="price-topline">EXAMPLE TIER 02</div><h3>Follow-through</h3><p class="price-intro">A more detailed approach to reviewing and following up on inquiries.</p><div class="price"><span class="currency">$</span>750 <span class="price-label">example setup</span></div><p class="price-maintenance">+ $150/month <span>example support</span></p><div class="price-divider"></div><p class="includes-label">Possible scope</p><ul class="check-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Everything in Essentials scope</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Follow-up message templates</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Escalation and handoff rules</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Pre-launch workflow testing</li></ul><a class="button button-blue price-button" href="#request-demo">Preview request form <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a></article>
+          <article class="price-card"><div class="price-topline">EXAMPLE TIER 03</div><h3>Custom workflow</h3><p class="price-intro">For processes that need a deeper discovery and custom proposal.</p><div class="price price-custom">Scoped <span>individually</span></div><p class="price-maintenance">No set example fee</p><div class="price-divider"></div><p class="includes-label">Possible scope</p><ul class="check-list"><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Process mapping session</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Custom workflow design</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Feasibility and permissions review</li><li><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg> Defined scope before build</li></ul><a class="button button-outline-dark price-button" href="#request-demo">Preview request form <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faqs" aria-labelledby="faqs-heading"><div class="container faq-layout"><div class="faq-aside"><p class="eyebrow">GOOD QUESTIONS, CLEAR ANSWERS</p><h2 id="faqs-heading">A few things <span class="muted-heading">worth knowing.</span></h2><p>Transparency matters as much as a polished workflow. Here's what this demo does—and doesn't—represent.</p><a class="text-link" href="#request-demo">See the demo request form <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></a></div><div class="faq-list">
+      <details><summary>Is DetailFlow a working CRM product?<span class="faq-plus" aria-hidden="true"></span></summary><p>No. This site presents a service concept and a sample CRM interface. The preview filters fictional records locally; it is not a connected, production-ready CRM.</p></details>
+      <details><summary>Can this work with the tools I already use?<span class="faq-plus" aria-hidden="true"></span></summary><p>That depends on your current tools, access permissions, and technical requirements. Existing systems would be reviewed first. No specific integration is included or promised by this prototype.</p></details>
+      <details><summary>Will customer follow-ups happen automatically?<span class="faq-plus" aria-hidden="true"></span></summary><p>Not on this site. Automated follow-ups are a potential service to scope, configure, test, and approve before use. This demo does not send emails, texts, or notifications.</p></details>
+      <details><summary>Are the prices and results guaranteed?<span class="faq-plus" aria-hidden="true"></span></summary><p>No. Prices are illustrative examples only, and there are no claims or guarantees of increased bookings, revenue, or saved time. A real proposal would specify deliverables and fees.</p></details>
+      <details><summary>What happens when I complete the form?<span class="faq-plus" aria-hidden="true"></span></summary><p>The browser checks the required fields, shows inline error messages if necessary, and displays a local-only validation result. Nothing is sent to DetailFlow or a CRM. A backend and privacy process would be needed before using it for real requests.</p></details>
+    </div></div></section>
+
+    <section class="request-section dark-section" id="request-demo" aria-labelledby="request-heading">
+      <div class="request-glow" aria-hidden="true"></div>
+      <div class="container request-layout">
+        <div class="request-copy"><p class="eyebrow eyebrow-light">LET'S MAP OUT THE POSSIBILITIES</p><h2 id="request-heading">A more organized day <span class="gradient-text">starts with a conversation.</span></h2><p>Share a little about your detailing business to preview how a demo inquiry could be collected. This form is intentionally frontend-only.</p><div class="request-points"><div><span class="request-check"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span> Explore your current intake process</div><div><span class="request-check"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span> Identify repetitive admin tasks</div><div><span class="request-check"><svg class="icon" aria-hidden="true"><use href="#icon-check"/></svg></span> Outline what a future setup might involve</div></div></div>
+        <div class="form-card"><div class="form-heading"><div><span class="form-badge"><svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg> PROTOTYPE FORM</span><h3>Preview a demo request</h3><p>See how basic form validation would work.</p></div></div>
+          <!-- Static prototype: the submit control is disabled until JavaScript is ready. -->
+          <form id="demoForm" novalidate aria-describedby="formPrototypeNotice requiredFieldsNote">
+            <div class="form-grid">
+              <div class="field">
+                <label for="fullName">Your name <span aria-hidden="true">*</span></label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="e.g., Alex Rivera" maxlength="80" aria-describedby="fullNameError" required>
+                <span class="field-error" id="fullNameError" hidden></span>
+              </div>
+              <div class="field">
+                <label for="businessName">Business name <span aria-hidden="true">*</span></label>
+                <input id="businessName" name="businessName" type="text" autocomplete="organization" placeholder="e.g., Northside Auto Spa" maxlength="100" aria-describedby="businessNameError" required>
+                <span class="field-error" id="businessNameError" hidden></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="email">Work email <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@business.com" maxlength="254" aria-describedby="emailError" required>
+              <span class="field-error" id="emailError" hidden></span>
+            </div>
+            <div class="field">
+              <label for="workflowInterest">What would you like to improve? <span aria-hidden="true">*</span></label>
+              <select id="workflowInterest" name="workflowInterest" aria-describedby="workflowInterestError" required>
+                <option value="">Select an area of interest</option>
+                <option value="inquiries">Organizing inquiries</option>
+                <option value="follow-ups">Customer follow-ups</option>
+                <option value="booking">Booking request workflow</option>
+                <option value="explore">Not sure yet — exploring</option>
+              </select>
+              <span class="field-error" id="workflowInterestError" hidden></span>
+            </div>
+            <div class="field">
+              <label for="details">Anything else? <span class="optional">(optional)</span></label>
+              <textarea id="details" name="details" rows="3" maxlength="500" aria-describedby="detailsHelp" placeholder="Tell us a little about your current process..."></textarea>
+              <span class="field-hint" id="detailsHelp">Up to 500 characters. Please avoid including customer or payment information.</span>
+            </div>
+            <p class="required-note" id="requiredFieldsNote">* Required fields</p>
+            <p id="formPrototypeNotice" class="prototype-notice">
+              <svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>
+              <span><strong>Prototype only:</strong> No data is submitted or stored by DetailFlow. This form needs a secure backend and privacy notice before accepting real requests.</span>
+            </p>
+            <div class="form-actions">
+              <button class="button button-blue button-submit" type="submit" id="previewRequest" disabled>Validate demo request <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
+              <button class="form-clear" id="clearForm" type="reset">Clear form</button>
+            </div>
+            <div id="formMessage" class="form-message" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div>
+            <noscript><p class="noscript-note">JavaScript is required for the local validation preview. This form does not submit requests.</p></noscript>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer dark-section"><div class="container footer-inner"><div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M8 11h10.5a8 8 0 0 1 0 16H8V11Z" stroke="currentColor" stroke-width="3.1" stroke-linejoin="round"/><path d="M17.5 9H26m-8.5 9H29m-10 9h7" stroke="currentColor" stroke-width="3.1" stroke-linecap="round"/></svg></span><span>Detail<span class="brand-accent">Flow</span></span></a><p>Thoughtful automation concepts for detailers.</p></div><div class="footer-right"><div class="footer-links"><a href="#benefits">Benefits</a><a href="#crm-preview">Preview</a><a href="#pricing">Pricing</a><a href="#request-demo">Demo form</a></div><p>© <span id="year">2026</span> DetailFlow · Concept website · No live services connected</p></div></div></footer>
+</body>
+</html>
