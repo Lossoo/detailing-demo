@@ -210,12 +210,55 @@
               <svg class="icon" aria-hidden="true"><use href="#icon-shield"/></svg>
               <span><strong>Prototype only:</strong> No data is submitted or stored by DetailFlow. This form needs a secure backend and privacy notice before accepting real requests.</span>
             </p>
-            <div class="form-actions">
-              <button class="button button-blue button-submit" type="submit" id="previewRequest" disabled>Validate demo request <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
-              <button class="form-clear" id="clearForm" type="reset">Clear form</button>
-            </div>
-            <div id="formMessage" class="form-message" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden></div>
-            <noscript><p class="noscript-note">JavaScript is required for the local validation preview. This form does not submit requests.</p></noscript>
+
+<div class="form-actions">
+
+  <!-- Opens your working Google Form -->
+  <a
+    href="PASTE_YOUR_GOOGLE_FORM_URL_HERE"
+    class="button button-blue"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Submit a Demo Request
+  </a>
+
+  <!-- Keep existing validation functionality -->
+  <button
+    class="button button-blue button-submit"
+    type="submit"
+    id="previewRequest"
+    disabled
+  >
+    Validate demo request
+    <svg class="icon" aria-hidden="true">
+      <use href="#icon-arrow-right"/>
+    </svg>
+  </button>
+
+  <button class="form-clear" id="clearForm" type="reset">
+    Clear form
+  </button>
+
+</div>
+
+<div
+  id="formMessage"
+  class="form-message"
+  role="status"
+  aria-live="polite"
+  aria-atomic="true"
+  tabindex="-1"
+  hidden
+></div>
+
+<noscript>
+  <p class="noscript-note">
+    JavaScript is required for the local validation preview.
+    The preview form does not submit requests.
+    Use the Submit a Demo Request link to open Google Forms.
+  </p>
+</noscript>
           </form>
         </div>
       </div>
